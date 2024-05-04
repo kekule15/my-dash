@@ -1,0 +1,70 @@
+.container {
+
+    position: fixed;
+
+}
+
+.items {
+    position: relative;
+    background: linear-gradient(to top, #182237, #253352);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.bgContainer {
+
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    bottom: 0;
+    right: 0;
+
+}
+
+.bg {
+    opacity: 0.1;
+    object-fit: cover;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.notification {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+.title {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--text);
+}
+
+.subtitle {
+    font-weight: 300;
+    color: var(--textSoft);
+}
+
+.desc {
+    font-weight: 300;
+    color: var(--textSoft);
+}
+
+.button {
+    padding: 10px;
+    gap: 20px;
+    background-color: #5d57c9;
+    display: flex;
+    align-items: center;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: max-content;
+}
