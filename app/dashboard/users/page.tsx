@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 
 import Image from 'next/image'
@@ -7,7 +9,11 @@ import SearchWidget from '@/app/ui/dashboard/search/search'
 import Link from 'next/link'
 import PaginationWidget from '@/app/ui/dashboard/pagination/pagination'
 
-const UsersPage = () => {
+
+const UsersPage = async () => {
+
+
+
   return (
     <div className={styles.container}>
       <div className={styles.top}>
@@ -40,16 +46,16 @@ const UsersPage = () => {
             <td>Admin</td>
             <td>Active</td>
             <td>
-             <div className={styles.buttons}>
-             <Link href="/dashboard/users/test">
-                <button className={`${styles.button} ${styles.view} `}>
-                  View
-                </button>
-              </Link>
-              <button className={`${styles.button} ${styles.delete} `}>
+              <div className={styles.buttons}>
+                <Link href="/dashboard/users/test">
+                  <button className={`${styles.button} ${styles.view} `}>
+                    View
+                  </button>
+                </Link>
+                <button className={`${styles.button} ${styles.delete} `}>
                   Delete
                 </button>
-             </div>
+              </div>
             </td>
           </tr>
         </tbody>

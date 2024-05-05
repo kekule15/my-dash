@@ -8,7 +8,7 @@ const FooterWidget = () => {
             </h2>
 
             <h2 className={styles.text}>
-                © All rights research DEV
+                © All rights reserved
             </h2>
 
         </div>
